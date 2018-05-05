@@ -8,7 +8,7 @@ public enum ResponseCode {
     SUCCESS("200"), FAILED("500"), INVALID_REQUEST("400");
     private String code;
     private ResponseCode(String code) {
-        code = code;
+        this.code = code;
     }
 
     public String getCode() {
