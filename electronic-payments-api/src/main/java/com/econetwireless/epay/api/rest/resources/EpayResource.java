@@ -6,6 +6,7 @@ import com.econetwireless.epay.api.rest.messages.TransactionsResponse;
 import com.econetwireless.utils.messages.AirtimeBalanceResponse;
 import com.econetwireless.utils.messages.AirtimeTopupRequest;
 import com.econetwireless.utils.messages.AirtimeTopupResponse;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -17,9 +18,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("resources/services")
 public class EpayResource {
 
+    @InjectMocks
     private EpayRequestProcessor epayRequestProcessor;
 
-
+    @InjectMocks
     private ReportingProcessor reportingProcessor;
 
     @GetMapping(value = "enquiries/{partnerCode}/balances/{mobileNumber}",
