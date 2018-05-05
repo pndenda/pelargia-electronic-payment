@@ -12,11 +12,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>electronic-payments-api</artifactId>
+
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
+
+
+
+
+
         <dependency>
             <groupId>com.econetwireless</groupId>
             <artifactId>electronic-payments-business</artifactId>
@@ -69,6 +77,11 @@
                         <port>8888</port>
                     </httpConnector>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
             </plugin>
         </plugins>
     </build>
