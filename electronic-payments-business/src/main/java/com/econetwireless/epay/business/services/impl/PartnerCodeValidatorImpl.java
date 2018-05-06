@@ -4,6 +4,7 @@ import com.econetwireless.epay.business.services.api.PartnerCodeValidator;
 import com.econetwireless.epay.dao.requestpartner.api.RequestPartnerDao;
 import com.econetwireless.utils.enums.ResponseCode;
 import com.econetwireless.utils.execeptions.EpayException;
+import com.econetwireless.utils.pojo.INCreditResponse;
 
 /**
  * Created by tnyamakura on 18/3/2017.
