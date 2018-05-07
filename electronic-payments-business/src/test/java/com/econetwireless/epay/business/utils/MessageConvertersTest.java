@@ -40,20 +40,11 @@ public class MessageConvertersTest {
         creditRequest.setReferenceNumber(referenceNumber);
     }
 
+@Test
+    public void SetUp(){
+        
+}
 
-   @Test
-    public static CreditRequest convert(){
-
-        if(inCreditRequest == null){
-            return null;
-        }
-        final CreditRequest creditRequest = new CreditRequest();
-        creditRequest.setMsisdn(inCreditRequest.getMsisdn());
-        creditRequest.setReferenceNumber(inCreditRequest.getReferenceNumber());
-        creditRequest.setPartnerCode(inCreditRequest.getPartnerCode());
-        creditRequest.setAmount(inCreditRequest.getAmount());
-        return creditRequest;
-    }
 
 
     }
