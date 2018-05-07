@@ -31,29 +31,24 @@ public class EnquiriesServiceImplTest {
 
 
     @Mock
-    ChargingPlatform chargingPlatform;
-
-    EnquiriesService enquiriesService;
+    private ChargingPlatform chargingPlatform;
 
     @Mock
-    SubscriberRequestDao subscriberRequestDao;
+    private SubscriberRequestDao subscriberRequestDao;
 
-
-    AirtimeTopupRequest airtimeTopupRequest;
-    AirtimeTopupResponse airtimeTopupResponse;
+    private EnquiriesService enquiriesService;
+    private AirtimeTopupRequest airtimeTopupRequest;
 
     private String msisdn;
-    private String responseCode;
     private String partnerCode;
     private double amount;
     private SubscriberRequest subscriberRequest;
     private String requestType;
-    private String narrative;
     private String referenceNumber;
 
     private INCreditRequest inCreditRequest;
     private INBalanceResponse inBalanceResponse;
-    AirtimeBalanceResponse airtimeBalanceResponse;
+
 
     @Before
     public void setUp() {
@@ -93,12 +88,6 @@ public class EnquiriesServiceImplTest {
         inBalanceResponse.setMsisdn(msisdn);
         inBalanceResponse.setNarrative("Successful");
         inBalanceResponse.setResponseCode("400");
-
-        airtimeBalanceResponse =  new AirtimeBalanceResponse();
-        airtimeBalanceResponse.setNarrative(narrative);
-        airtimeBalanceResponse.setResponseCode(responseCode);
-        airtimeBalanceResponse.setMsisdn(msisdn);
-        airtimeBalanceResponse.setAmount(amount);
 
 
     }

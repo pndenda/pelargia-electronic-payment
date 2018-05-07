@@ -32,14 +32,12 @@ public class CreditsServiceImplTest {
         @Mock
         ChargingPlatform chargingPlatform;
 
-        CreditsService creditsService;
-
         @Mock
         SubscriberRequestDao subscriberRequestDao;
 
-
-        AirtimeTopupRequest airtimeTopupRequest;
-        AirtimeTopupResponse airtimeTopupResponse;
+        private CreditsService creditsService;
+        private AirtimeTopupRequest airtimeTopupRequest;
+        private AirtimeTopupResponse airtimeTopupResponse;
 
         private String msisdn;
         private String referenceNumber;
