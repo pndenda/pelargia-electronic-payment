@@ -118,7 +118,7 @@ public class CreditsServiceImplTest {
         }
 
         @Test
-        public void enquireAirtimeBalanceShouldPassIfPartnerCodeAndMsisdnAreValid(){
+        public void creditShouldPassIfPartnerCodeAndMsisdnAreValid(){
         final String message ="Successful Topup";
 
             when(subscriberRequestDao.save(any(SubscriberRequest.class))).thenReturn(subscriberRequest);

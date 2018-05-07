@@ -42,13 +42,12 @@ public class EnquiriesServiceImplTest {
     private String msisdn;
     private String partnerCode;
     private double amount;
-    private SubscriberRequest subscriberRequest;
     private String requestType;
     private String referenceNumber;
 
     private INCreditRequest inCreditRequest;
     private INBalanceResponse inBalanceResponse;
-
+    private SubscriberRequest subscriberRequest;
 
     @Before
     public void setUp() {
